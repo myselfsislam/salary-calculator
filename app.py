@@ -5,6 +5,7 @@ from datetime import datetime
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
+server = app.server
 
 # Salary data by location and grade
 SALARY_DATA = {
