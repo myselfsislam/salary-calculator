@@ -470,57 +470,57 @@ app.layout = html.Div([
                             
                             # Metrics explanations
                             html.Div([
-                                create_glossary_metric("💎", "Annual Base Salary", 
+                                create_glossary_metric("Annual Base Salary", 
                                     "Primary annual compensation before benefits and bonuses, calculated based on location, grade, and experience.",
                                     "Base Salary = (Grade Base Salary × Experience Multiplier) × Currency Rate",
                                     "Experience Multiplier = 1 + (Years of Experience × 0.1)"),
                                 
-                                create_glossary_metric("🌙", "Monthly Draw",
+                                create_glossary_metric("Monthly Draw",
                                     "Monthly salary amount, calculated by dividing the annual base salary by 12 months.",
                                     "Monthly Draw = Annual Base Salary ÷ 12",
                                     "Example: £124,800 ÷ 12 = £10,400"),
                                 
-                                create_glossary_metric("🦅", "USD Equivalent",
+                                create_glossary_metric("USD Equivalent",
                                     "Annual salary converted to US Dollars for global comparison, using standard conversion rates.",
                                     "USD Equivalent = Local Salary (INR) ÷ 83",
                                     "Example: ₹13,12,000 ÷ 83 = $15,807"),
                                 
-                                create_glossary_metric("🏆", "Total CTC",
+                                create_glossary_metric("Total CTC",
                                     "Cost to Company including benefits, taxes, and additional compensation components.",
                                     "Total CTC = Annual Base Salary × 1.3",
                                     "Includes 30% overhead for benefits and taxes"),
                                 
-                                create_glossary_metric("⏱️", "Total Annual Hours",
+                                create_glossary_metric("Total Annual Hours",
                                     "Total working hours in a year, calculated based on location-specific working days.",
                                     "Total Hours = Annual Workdays × 8 hours",
                                     "Example: 227 days × 8 = 1,816 hours"),
                                 
-                                create_glossary_metric("🔥", "Annual Billable Hours",
+                                create_glossary_metric("Annual Billable Hours",
                                     "Hours that can be directly billed to clients, based on daily billable capacity.",
                                     "Billable Hours = Annual Workdays × Daily Billable Hours",
                                     "Example: 227 × 4 = 908 hours"),
                                 
-                                create_glossary_metric("⚡", "Internal Hourly Cost",
+                                create_glossary_metric("Internal Hourly Cost",
                                     "Cost per hour for the company, including all employee expenses divided by total working hours.",
                                     "Hourly Cost = Annual Base Salary ÷ Total Annual Hours",
                                     "Example: £124,800 ÷ 1,816 = £68.73/hour"),
                                 
-                                create_glossary_metric("📊", "Minimum Hourly Rate",
+                                create_glossary_metric("Minimum Hourly Rate",
                                     "Break-even hourly billing rate required to achieve the target profit margin.",
                                     "Min Rate = Cost per Billable Hour ÷ (1 - Target Margin ÷ 100)",
                                     "Cost per Billable Hour = (Annual Salary USD) ÷ Annual Billable Hours"),
                                 
-                                create_glossary_metric("🚀", "Client Billing Rate",
+                                create_glossary_metric("Client Billing Rate",
                                     "Recommended premium billing rate for clients, with additional markup for competitive positioning.",
                                     "Client Rate = Minimum Hourly Rate × 1.75",
                                     "Includes 75% markup over minimum rate"),
                                 
-                                create_glossary_metric("📈", "Actual Profit Margin",
+                                create_glossary_metric("Actual Profit Margin",
                                     "Real profit percentage achieved at the recommended client billing rate.",
                                     "Profit Margin = ((Client Rate - Cost per Hour) ÷ Client Rate) × 100",
                                     "Shows actual profitability at recommended rates"),
                                 
-                                create_glossary_metric("💰", "Monthly Revenue Projection",
+                                create_glossary_metric("Monthly Revenue Projection",
                                     "Expected monthly revenue generated from this resource at full billable capacity.",
                                     "Monthly Revenue = Client Rate × Daily Billable Hours × (Workdays ÷ 12)",
                                     "Projected earnings at full capacity")
