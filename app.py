@@ -178,7 +178,7 @@ app.layout = html.Div([
     html.Div([
         # Header
         html.Div([
-            html.H1("🌟Qualitest Compensation Intelligence Platform", style={
+            html.H1("🌟Compensation Intelligence Platform", style={
                 'fontSize': '3rem',
                 'fontWeight': '800',
                 'background': 'linear-gradient(135deg, #9333ea, #3b82f6, #10b981)',
